@@ -2,18 +2,19 @@
 <html lang="zxx">
 	<head>
 		<title>Bookchain</title>
+		<link rel = "icon" href =  "images\logo.jpg" type = "image/x-icon"> 
 		<!-- Meta tag Keywords -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8" />
-		<meta name="keywords" content="Bookchain"/>
+		<meta name="keywords" content="Baggage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 		<script>
-		addEventListener("load", function() {
-			setTimeout(hideURLbar, 0);
-		}, false);
-		
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
 		</script>
 		<!-- //Meta tag Keywords -->
 		<!-- Custom-Files -->
@@ -38,44 +39,22 @@
 						<div id="logo">
 							<h1> <a href="index.html"><span class="log-w3pvt">B</span>ookchain</a> <label class="sub-des">inherit(your_book);</label></h1>
 						</div>
+
 						<div class="forms ml-auto">
-							<a href="login.html" class="btn">
-								<span class="fa fa-user-circle-o">
-								</span>
-								Sign In
-							</a>
-							<a href="register.html" class="btn">
-								<span class="fa fa-pencil-square-o">
-								</span>
-								Sign Up
-							</a>
+							<a href="login.jsp" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
+							<a href="register.jsp" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
 						</div>
 					</div>
 					<div class="nav-top-wthree">
 						<nav>
-							<label for="drop" class="toggle">
-								<span class="fa fa-bars">
-								</span>
-							</label>
+							<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
-								<li><a href="index.html">Home</a></li>
+								<li class="active"><a href="index.html">Home</a></li>
 								<li><a href="about.html">About Us</a></li>
-								<li class="active">
-									<a href="shop.html">
-										Buy
-									</a>
-								</li>
-								<li class="active">
-									<a href="shop.html">
-										Sell
-									</a>
-								</li>
-								<li>
-									<a href="contact.html">
-										Contact
-									</a>
-								</li>
+								<li><a href="about.html">Buy</a></li>
+								<li><a href="shop.html">Sell</a></li>
+								<li><a href="contact.html">Contact</a></li>
 							</ul>
 						</nav>
 						<!-- //nav -->
@@ -94,94 +73,65 @@
 			<!-- //header -->
 		</div>
 		<!-- //banner-->
-		<!--/banner-bottom -->
+		<!--/login -->
 		<section class="banner-bottom py-5">
-			<div class="container py-5">
-				<h3 class="title-wthree mb-lg-5 mb-4 text-center">Currently Available</h3>
-				<!--/row-->
-				<div class="row shop-wthree-info text-center">
-					<div class="col-lg-3 shop-info-grid text-center mt-4">
-						<div class="product-shoe-info shoe">
-							<div class="men-thumb-item">
-								<img src="images/b1.jpg" class="img-fluid" alt="">
-							</div>
-							<div class="item-info-product">
-								<h4>
-									<a href="single.html">
-										Book Name
-									</a>
-								</h4>
-								<p>Author Name</p>
-								<div class="product_price">
-									<div class="grid-price">
-										<span class="money"><!-- <span class="line">$799</span> --> &#8377;675.00</span>
-									</div>
-								</div>
-							</div>
-						</div>
+			<div class="container">
+				<div class="content-grid">
+					<div class="text-center icon">
+						<span class="fa fa-user-circle-o"></span>
 					</div>
-					<div class="col-lg-3 shop-info-grid text-center mt-4">
-						<div class="product-shoe-info shoe">
-							<div class="men-thumb-item">
-								<img src="images/b2.jpg" class="img-fluid" alt="">
-							</div>
-							<div class="item-info-product">
-								<h4>
-									<a href="single.html">Shoulder Bag (Pink) </a>
-								</h4>
-								<div class="product_price">
-									<div class="grid-price">
-										<span class="money"><span class="line">$799</span> $675.00</span>
-									</div>
+					<div class="content-bottom">
+						<form action="#" method="post">
+							<div class="field-group">
+								<div class="content-input-field">
+									<input name="name" id="text1" type="text" value="" placeholder="User Name" required="">
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 shop-info-grid text-center mt-4">
-						<div class="product-shoe-info shoe">
-							<div class="men-thumb-item">
-								<img src="images/b3.jpg" class="img-fluid" alt="">
-							</div>
-							<div class="item-info-product">
-								<h4>
-									<a href="single.html">Sling Bag </a>
-								</h4>
-								<div class="product_price">
-									<div class="grid-price">
-										<span class="money"><span class="line">$599</span> $475.00</span>
-									</div>
+							<div class="field-group">
+								<div class="content-input-field">
+									<input name="email" id="text1" type="email" value="" placeholder="User Email" required="">
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 shop-info-grid text-center mt-4">
-						<div class="product-shoe-info shoe">
-							<div class="men-thumb-item">
-								<img src="images/b4.jpg" class="img-fluid" alt="">
-							</div>
-							<div class="item-info-product">
-								<h4>
-									<a href="single.html">Tote (Blue) </a>
-								</h4>
-								<div class="product_price">
-									<div class="grid-price">
-										<span class="money"><span class="line">$799</span> $675.00</span>
-									</div>
+							<div class="field-group">
+								<div class="content-input-field">
+									<input name="password" id="myInput" type="Password" placeholder="Password">
 								</div>
 							</div>
-						</div>
+							<div class="field-group">
+								<div class="content-input-field">
+									<select name ="college">
+										<option value = "medicaps" selected> Medicaps University </option>
+									</select>
+								</div>
+							</div>	
+							<div class="field-group">
+								<div class="content-input-field">
+									<select name ="branch">
+										<option value = "cs" selected> Computer Science </option>
+										<option value = "it" >Information Technology  </option>
+										<option value = "ec">Electronics </option>
+										<option value = "civil"> Civil  </option>
+										<option value = "me"> Mechanical </option>
+									</select>
+								</div>
+							</div>		
+							<div class="content-input-field">
+								<button type="submit" class="btn">Sign Up</button>
+							</div>
+							<div class="list-login-bottom text-center mt-lg-5 mt-4">
+								<a href="#" class="">By clicking Signup, I agree to your terms</a>
+							</div>
+						</form>
 					</div>
 				</div>
-				<!--//row-->
 			</div>
 		</section>
-		<!-- /banner-bottom -->
+		<!-- /login -->
 		<!--/shipping-->
 		<section class="shipping-wthree">
 			<div class="shiopping-grids d-lg-flex">
 				<div class="col-lg-4 shiopping-w3pvt-gd text-center">
-					<div class="icon-gd">
-						<span class="fa fa-truck" aria-hidden="true"></span>
+					<div class="icon-gd"><span class="fa fa-truck" aria-hidden="true"></span>
 					</div>
 					<div class="icon-gd-info">
 						<h3>TRAVEL FREE</h3>
@@ -189,20 +139,14 @@
 					</div>
 				</div>
 				<div class="col-lg-4 shiopping-w3pvt-gd sec text-center">
-					<div class="icon-gd">
-						<span class="fa fa-bullhorn" aria-hidden="true">
-						</span>
-					</div>
+					<div class="icon-gd"><span class="fa fa-bullhorn" aria-hidden="true"></span></div>
 					<div class="icon-gd-info">
 						<h3>COMMISSION FREE</h3>
 						<p>No third party involvement</p>
 					</div>
 				</div>
 				<div class="col-lg-4 shiopping-w3pvt-gd text-center">
-					<div class="icon-gd">
-						<span class="fa fa-gift" aria-hidden="true">
-						</span>
-					</div>
+					<div class="icon-gd"> <span class="fa fa-gift" aria-hidden="true"></span></div>
 					<div class="icon-gd-info">
 						<h3>BEST RESELL PRICE</h3>
 						<p>Comparatively less buying and selling price</p>
@@ -216,10 +160,8 @@
 			<div class="container py-md-5">
 				<div class="row">
 					<div class="col-lg-3 footer_wthree_gridf mt-lg-5">
-						<h2>
-							<a href="index.html"><span>B</span>ookchain
-							</a>
-						</h2>
+						<h2><a href="index.html"><span>B</span>ookchain
+							</a> </h2>
 						<label class="sub-des2">inherit(your_book);</label>
 					</div>
 					<div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-4">
@@ -243,6 +185,7 @@
 							<li>
 								<a href="single.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Extra Page</a>
 							</li>
+
 							<li>
 								<a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span> Terms & Conditions</a>
 							</li>
@@ -257,10 +200,10 @@
 					<div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-sm-4 mt-3">
 						<ul class="footer_wthree_gridf_list">
 							<li>
-								<a href="login.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Login </a>
+								<a href="login.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> Login </a>
 							</li>
 							<li>
-								<a href="register.html"><span class="fa fa-angle-right" aria-hidden="true"></span>Register</a>
+								<a href="register.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span>Register</a>
 							</li>
 							<li>
 								<a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span>Privacy & Policy</a>
@@ -268,14 +211,15 @@
 						</ul>
 					</div>
 				</div>
+
 				<div class="w3ls-fsocial-grid">
 					<h3 class="sub-w3ls-headf">Follow Us</h3>
 					<div class="social-ficons">
-					<ul>
-						<li><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
-						<li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
-						<li><a href="#"><span class="fa fa-google"></span>Google</a></li>
-					</ul>
+						<ul>
+							<li><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
+							<li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
+							<li><a href="#"><span class="fa fa-google"></span>Google</a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="move-top text-center mt-lg-4 mt-3">
@@ -284,12 +228,5 @@
 			</div>
 		</div>
 		<!-- //footer -->
-		<!-- copyright -->
-		<div class="cpy-right text-center py-3">
-			<p>© 2019 Baggage. All rights reserved | Design by
-				<a href="http://w3layouts.com"> W3layouts.</a>
-			</p>
-		</div>
-		<!-- //copyright -->
 	</body>
 </html>
