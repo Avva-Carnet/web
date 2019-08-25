@@ -1,8 +1,10 @@
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
@@ -27,7 +29,7 @@
 		<link rel="stylesheet" href="${contextPath}/resources/css/style.css" type="text/css" media="all" />
 		<!-- Style-CSS -->
 		<!-- font-awesome-icons -->
-		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="${contextPath}/resources/css/font-awesome.css" rel="stylesheet">
 		<!-- //font-awesome-icons -->
 		<!-- /Fonts -->
 		<link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
@@ -94,37 +96,54 @@
 			<div class="container">
 				<div class="content-grid">
 					<div class="text-center icon">
-						<span class="fa fa-user-circle-o"></span>
+						<span class="fa fa-book"></span>
 					</div>
 					<div class="content-bottom">
-						<form action="#" method="post">
-							<div class="field-group">
-								<div class="content-input-field">
-									<input name="text1" id="text1" type="text" value="" placeholder="User Name" required="">
+						<form:form modelAttribute="bookForm" action="${contextPath}/books/new" method="POST">
+							<spring:bind path="name">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="name" name="book" id="book" type="text" value="" placeholder="Book Name" required=""></form:input>
+										<form:errors path="name"></form:errors>
+									</div>
 								</div>
-							</div>
-							<div class="field-group">
-								<div class="content-input-field">
-									<input name="text1" id="text1" type="email" value="" placeholder="User Email" required="">
+							</spring:bind>
+							<spring:bind path="author">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="author" name="author" id="" type="text" value="" placeholder="Enter Author Name" required=""></form:input>
+										<form:errors path="author"></form:errors>
+									</div>
 								</div>
-							</div>
-							<div class="field-group">
-								<div class="content-input-field">
-									<input name="text1" id="text3" type="text" value="" placeholder="UserPhone" required="">
+							</spring:bind>
+							<spring:bind path="edition">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="edition" name="book edition" id="" type="number" value="" placeholder="Enter book edition(number only)" required=""></form:input>
+										<form:errors path="edition"></form:errors>
+									</div>
 								</div>
-							</div>
+							</spring:bind>
+							<spring:bind path="price">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="price" name="price" id="price" type="number" placeholder="Price in rupees"></form:input>
+										<form:errors path="price"></form:errors>
+									</div>
+								</div>
+							</spring:bind>
 							<div class="field-group">
 								<div class="content-input-field">
-									<input name="password" id="myInput" type="Password" placeholder="Password">
+									<input name="file" id="file" type="file">
 								</div>
 							</div>
 							<div class="content-input-field">
-								<button type="submit" class="btn">Sign Up</button>
+								<button type="submit" class="btn">Upload</button>
 							</div>
 							<div class="list-login-bottom text-center mt-lg-5 mt-4">
-								<a href="#" class="">By clicking Signup, I agree to your terms</a>
+								<a href="#" class=""></a>
 							</div>
-						</form>
+						</form:form>
 					</div>
 				</div>
 			</div>

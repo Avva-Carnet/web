@@ -102,7 +102,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row">
                 <div class="col-lg-5 banner-left-info">
                     <h3>The Largest Range <span>of Books</span></h3>
-                    <a href="${contextPath}/sell" class="btn shop">Buy Now</a>
+                    <a href="${contextPath}/books/new" class="btn shop">Buy Now</a>
                 </div>
 
                 <div class="col-lg-7 banner-img">
