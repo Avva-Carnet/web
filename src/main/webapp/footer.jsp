@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 	<head>
 		<title>Bookchain</title>
@@ -36,40 +36,41 @@
 			<div class="container py-md-5">
 				<div class="row">
 					<div class="col-lg-4 footer_wthree_gridf mt-lg-5">
-						<h2><a href="${contextPath}/index"><span>B</span>ookchain
+						<h2><a href="${contextPath}/index.jsp"><span>B</span>ookchain
 						</a> </h2>
 						<label class="sub-des2">inherit(your_book);</label>
 					</div>
 					<div class="col-lg-4 footer_wthree_gridf mt-md-0 mt-4">
 						<ul class="footer_wthree_gridf_list">
 							<li>
-								<a href="${contextPath}/index"><span class="fa fa-angle-right" aria-hidden="true"></span> Home</a>
+								<a href="${contextPath}/index.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> Home</a>
 							</li>
 							<li>
-								<a href="about.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> About</a>
+								<a href="${contextPath}/about.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> About</a>
 							</li>
 							<li>
-								<a href="shop.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> Buy</a>
+								<a href="${contextPath}/shop.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> Buy</a>
 							</li>
 							<li>
-								<a href="sell.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span>Sell</a>
+								<a href="${contextPath}/sell.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span>Sell</a>
 							</li>
 						</ul>
 					</div>
-					
-					<div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-sm-4 mt-3">
-						<ul class="footer_wthree_gridf_list">
-							<li>
-								<a href="${contextPath}/login"><span class="fa fa-angle-right" aria-hidden="true"></span> Login </a>
-							</li>
-							<li>
-								<a href="${contextPath}/register"><span class="fa fa-angle-right" aria-hidden="true"></span>Register</a>
-							</li>
-							<li>
-								<a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span>Privacy & Policy</a>
-							</li>
-						</ul>
-					</div>
+					<c:if test="${pageContext.request.userPrincipal.name == null}">
+						<div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-sm-4 mt-3">
+							<ul class="footer_wthree_gridf_list">
+								<li>
+									<a href="${contextPath}/login.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> Login </a>
+								</li>
+								<li>
+									<a href="${contextPath}/register.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span>Register</a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span>Privacy & Policy</a>
+								</li>
+							</ul>
+						</div>
+					</c:if>
 				</div>
 				<div class="w3ls-fsocial-grid">
 					<h3 class="sub-w3ls-headf">Follow Us</h3>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 
 <html lang="zxx">
@@ -39,27 +40,37 @@
 					<div class="top-w3pvt d-flex">
 						<div id="logo">
 							<h1>
-								<a href="${contextPath}/index">
+								<a href="${contextPath}/index.jsp">
 									<span class="log-w3pvt">B</span>ookchain
 								</a>
 								<label class="sub-des">inherit(your_book);</label>
 							</h1>
 						</div>
-						<div class="forms ml-auto">
-							<a href="${contextPath}/login" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
-							<a href="${contextPath}/register" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
-						</div>
+						<c:if test="${pageContext.request.userPrincipal.name != null}">
+					        <form id="logoutForm" method="POST" action="${contextPath}/logout">
+					            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+					        </form>
+							<div class="forms ml-auto">
+								<h4>Welcome ${pageContext.request.userPrincipal.name} | </h4><a onclick="document.forms['logoutForm'].submit()">Logout</a>
+							</div>
+					    </c:if>
+					    <c:if test="${pageContext.request.userPrincipal.name == null}">
+							<div class="forms ml-auto">
+								<a href="${contextPath}/login.jsp" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
+								<a href="${contextPath}/register.jsp" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
+							</div>
+						</c:if>
 					</div>
 					<div class="nav-top-wthree">
 						<nav>
 							<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
-								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="shop.jsp">Buy</a></li>
-								<li><a href="sell.jsp">Sell</a></li>
-								<li><a href="contact.jsp">Contact</a></li>
+								<li class="active"><a href="index.jsp">Home</a></li>
+								<li><a href="${contextPath}/about.jsp">About Us</a></li>
+								<li><a href="${contextPath}/shop.jsp">Buy</a></li>
+								<li><a href="${contextPath}/books/new">Sell</a></li>
+								<li><a href="${contextPath}/contact.jsp">Contact</a></li>
 							</ul>
 						</nav>
 						<div class="search-form ml-auto">

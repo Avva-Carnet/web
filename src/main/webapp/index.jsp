@@ -2,6 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
+<jsp:include page="header.jsp" />
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -37,46 +39,6 @@
 
 <body>
     <div class="main-sec">
-        <!-- //header -->
-        <header class="py-sm-3 pt-3 pb-2" id="home">
-            <div class="container">
-                <!-- nav -->
-                <div class="top-w3pvt d-flex">
-                    <div id="logo">
-                        <h1> <a href="${contextPath}/index"><span class="log-w3pvt">B</span>ookchain</a> <label class="sub-des">inherit(your_book);</label></h1>
-                    </div>
-
-                    <div class="forms ml-auto">
-                        <a href="${contextPath}/login" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
-                        <a href="${contextPath}/register" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
-                    </div>
-                </div>
-                <div class="nav-top-wthree">
-                    <nav>
-                        <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
-                        <input type="checkbox" id="drop" />
-                        <ul class="menu">
-                            <li class="active"><a href="${contextPath}/index">Home</a></li>
-                            <li><a href="${contextPath}/about">About Us</a></li>
-                            <li><a href="${contextPath}/sell">Books</a></li>
-                            <li><a href="${contextPath}/sell">Books</a></li>
-                            <li><a href="${contextPath}/contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <!-- //nav -->
-                    <div class="search-form ml-auto">
-                        <div class="form-w3layouts-grid">
-                            <form action="#" method="post" class="newsletter">
-                                <input class="search" type="search" placeholder="Search here..." required="">
-                                <button class="form-control btn" value=""><span class="fa fa-search"></span></button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </header>
-        <!-- //header -->
         <!--/banner-->
         <div class="banner-wthree-info container">
             <div class="row">
@@ -106,7 +68,7 @@
                     	Book Fairies
                     	Book
                     </p>
-                    <a href="${contextPath}/contact" class="btn shop mt-3">Join Now</a>
+                    <a href="${contextPath}/contact.jsp" class="btn shop mt-3">Join Now</a>
                 </div>
             </div>
         </div>

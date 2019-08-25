@@ -82,6 +82,7 @@
 									<input name="file" id="file" type="file">
 								</div>
 							</div>
+							<input type="hidden" name="username" value="${pageContext.request.userPrincipal.name}"/>
 							<div class="content-input-field">
 								<button type="submit" class="btn">Upload</button>
 							</div>
