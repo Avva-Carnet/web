@@ -86,47 +86,88 @@
 						<span class="fa fa-user-circle-o"></span>
 					</div>
 					<div class="content-bottom">
-						<form action="#" method="post">
-							<div class="field-group">
-								<div class="content-input-field">
-									<input name="name" id="text1" type="text" value="" placeholder="User Name" required="">
+						<form:form method="POST" modelAttribute="userForm">
+							<spring:bind path="username">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="username" name="username" id="text1" type="text" value="" autofocus="true" placeholder="Username"></form:input>
+										<form:errors path="username"></form:errors>
+									</div>
 								</div>
-							</div>
-							<div class="field-group">
-								<div class="content-input-field">
-									<input name="email" id="text1" type="email" value="" placeholder="User Email" required="">
+							</spring:bind>
+							<spring:bind path="firstname">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="firstname" name="firstname" id="text1" type="text" value="" autofocus="true" placeholder="First Name"></form:input>
+										<form:errors path="firstname"></form:errors>
+									</div>
 								</div>
-							</div>
-							<div class="field-group">
-								<div class="content-input-field">
-									<input name="password" id="myInput" type="Password" placeholder="Password">
+							</spring:bind>
+							<spring:bind path="lastname">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="lastname" name="lastname" id="text1" type="text" value="" autofocus="true" placeholder="Last Name"></form:input>
+										<form:errors path="lastname"></form:errors>
+									</div>
 								</div>
-							</div>
-							<div class="field-group">
-								<div class="content-input-field">
-									<select name ="college">
-										<option value = "medicaps" selected> Medicaps University </option>
-									</select>
+							</spring:bind>
+							<spring:bind path="email">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="email" name="email" id="text1" type="email" value="" autofocus="true" placeholder="Email"></form:input>
+										<form:errors path="email"></form:errors>
+									</div>
 								</div>
-							</div>	
-							<div class="field-group">
-								<div class="content-input-field">
-									<select name ="branch">
-										<option value = "cs" selected> Computer Science </option>
-										<option value = "it" >Information Technology  </option>
-										<option value = "ec">Electronics </option>
-										<option value = "civil"> Civil  </option>
-										<option value = "me"> Mechanical </option>
-									</select>
+							</spring:bind>
+							<spring:bind path="password">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="password" name="password" id="myInput" type="Password" placeholder="Password"></form:input>
+										<form:errors path="password"></form:errors>
+									</div>
 								</div>
-							</div>		
+							</spring:bind>
+							<spring:bind path="passwordConfirm">
+								<div class="field-group">
+									<div class="content-input-field ${status.error ? 'has-error' : ''}">
+										<form:input path="passwordConfirm" name="passwordConfirm" id="myInput" type="Password" placeholder="Confirm Password"></form:input>
+										<form:errors path="passwordConfirm"></form:errors>
+									</div>
+								</div>
+							</spring:bind>
+							
+							<spring:bind path="college">
+								<div class="field-group">
+									<div class="content-input-field">
+										<form:select path="college" class="custom-select" name ="college">
+											<option value = "medicaps" selected> Medicaps University </option>
+										</form:select>
+										<form:errors path="college"></form:errors>
+									</div>
+								</div>	
+							</spring:bind>
+							
+							<spring:bind path="branch">
+								<div class="field-group">
+									<div class="content-input-field">
+										<form:select path="branch" class="custom-select" name ="branch">
+											<option value = "cs" selected> Computer Science </option>
+											<option value = "it" >Information Technology  </option>
+											<option value = "ec">Electronics </option>
+											<option value = "civil"> Civil  </option>
+											<option value = "me"> Mechanical </option>
+										</form:select>
+										<form:errors path="branch"></form:errors>
+									</div>
+								</div>		
+							</spring:bind>
 							<div class="content-input-field">
 								<button type="submit" class="btn">Sign Up</button>
 							</div>
 							<div class="list-login-bottom text-center mt-lg-5 mt-4">
 								<a href="#" class="">By clicking Signup, I agree to your terms</a>
 							</div>
-						</form>
+						</form:form>
 					</div>
 				</div>
 			</div>

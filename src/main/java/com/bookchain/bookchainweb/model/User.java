@@ -1,18 +1,33 @@
 package com.bookchain.bookchainweb.model;
 
 import javax.persistence.*;
+
+
+
 import java.util.Set;
 
 @Entity
 @Table(name = "user")
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String name;
+    private String username;
+    
+    private String firstname;
+    
+    private String lastname;
+    
+    private String email;
 
-    private String password;
+    private String college;
+    
+    private String branch;
+
+	
+
+	private String password;
 
     @Transient
     private String passwordConfirm;
@@ -20,6 +35,9 @@ public class User {
     @ManyToMany
     private Set<Role> roles;
 
+    
+    
+    
     public Long getId() {
         return id;
     }
@@ -28,12 +46,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -59,4 +77,44 @@ public class User {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+    
+    public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getCollege() {
+		return college;
+	}
+
+	public void setCollege(String college) {
+		this.college = college;
+	}
+
+	public String getBranch() {
+		return branch;
+	}
+
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
 }

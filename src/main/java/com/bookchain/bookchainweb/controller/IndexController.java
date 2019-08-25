@@ -7,10 +7,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.bookchain.bookchainweb.helper.UserValidator;
 import com.bookchain.bookchainweb.model.User;
@@ -46,9 +42,9 @@ public class IndexController {
 
         userService.save(userForm);
 
-        securityService.autoLogin(userForm.getName(), userForm.getPasswordConfirm());
+        securityService.autoLogin(userForm.getUsername(), userForm.getPasswordConfirm());
 
-        return "redirect:/welcome";
+        return "redirect:/index";
     }
 
     @GetMapping("/login")

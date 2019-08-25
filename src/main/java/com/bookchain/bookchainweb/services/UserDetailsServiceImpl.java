@@ -19,20 +19,20 @@ import java.util.Set;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService{
-    @Autowired
-    private UserRepository userRepository;
+	 @Autowired
+	    private UserRepository userRepository;
 
-    @Override
-    @Transactional(readOnly = true)
-    public UserDetails loadUserByUsername(String name) {
-        User user = userRepository.findByName(name);
-        if (user == null) throw new UsernameNotFoundException(name);
+	    @Override
+	    @Transactional(readOnly = true)
+	    public UserDetails loadUserByUsername(String username) {
+	        User user = userRepository.findByUsername(username);
+	        if (user == null) throw new UsernameNotFoundException(username);
 
-        Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
-        for (Role role : user.getRoles()){
-            grantedAuthorities.add(new SimpleGrantedAuthority(role.getName()));
-        }
+	        Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
+	        for (Role role : user.getRoles()){
+	            grantedAuthorities.add(new SimpleGrantedAuthority(role.getName()));
+	        }
 
-        return new org.springframework.security.core.userdetails.User(user.getName(), user.getPassword(), grantedAuthorities);
-    }
+	        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), grantedAuthorities);
+	    }
 }

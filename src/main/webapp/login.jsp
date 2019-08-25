@@ -105,17 +105,20 @@
                     <span class="fa fa-unlock-alt"></span>
                 </div>
                 <div class="content-bottom">
-                    <form action="#" method="post">
-                        <div class="field-group">
+                    <form action="${contextPath}/login" method="POST">
+                        <span>${message}</span>
+                        <div class="field-group ${error != null ? 'has-error' : ''}">
                             <div class="content-input-field">
-                                <input name="text1" id="text1" type="text" value="" placeholder="User Name" required="">
+                                <input name="username" id="text1" type="text" value="" placeholder="User Name" required="">
                             </div>
                         </div>
-                        <div class="field-group">
+                        <div class="field-group ${error != null ? 'has-error' : ''}">
                             <div class="content-input-field">
                                 <input name="password" id="myInput" type="Password" placeholder="Password">
                             </div>
                         </div>
+                        <span>${error}</span>
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                         <div class="content-input-field">
                             <button type="submit" class="btn">Sign In</button>
                         </div>
@@ -134,7 +137,7 @@
                         </ul>
                         <ul class="list-login-bottom">
                             <li class="">
-                                <a href="register.html" class="">Don't have an Account?</a>
+                                <a href="${contextPath}/register" class="">Don't have an Account?</a>
                             </li>
                             <li class="">
                                 <a href="#" class="text-right">Need Help?</a>
