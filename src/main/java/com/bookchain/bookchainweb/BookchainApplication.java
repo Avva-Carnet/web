@@ -2,12 +2,18 @@ package com.bookchain.bookchainweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
 
 @SpringBootApplication
-@ComponentScan(basePackages= {"com.bookchain.bookchainweb.controller"})
-public class BookchainApplication {
+public class BookchainApplication extends SpringBootServletInitializer {
 
+	@Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(BookchainApplication.class);
+    }
+	
 	public static void main(String[] args) {
 		SpringApplication.run(BookchainApplication.class, args);
 	}

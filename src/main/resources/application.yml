@@ -16,5 +16,8 @@ spring:
       
   mvc:
     view:
-      prefix: /WEB-INF/views/
-      suffix: .html
+      prefix: /
+      suffix: .jsp
+      
+  messages:
+    basename: validation

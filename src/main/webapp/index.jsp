@@ -13,7 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Baggage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <meta name="keywords" content="Bookchain" />
     <script>
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -39,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
-    <div class="main-sec inner-page">
+    <div class="main-sec">
         <!-- //header -->
         <header class="py-sm-3 pt-3 pb-2" id="home">
             <div class="container">
@@ -93,60 +93,199 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </header>
         <!-- //header -->
+        <!--/banner-->
+        <div class="banner-wthree-info container">
+            <div class="row">
+                <div class="col-lg-5 banner-left-info">
+                    <h3>The Largest Range <span>of Books</span></h3>
+                    <a href="shop.html" class="btn shop">Buy Now</a>
+                </div>
 
+                <div class="col-lg-7 banner-img">
+                    <img src="images/bag.png" alt="part image" class="img-fluid">
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- //banner-->
-    <!--/login -->
+    <!--/banner-bottom -->
     <section class="banner-bottom py-5">
-        <div class="container">
-            <div class="content-grid">
-                <div class="text-center icon">
-                    <span class="fa fa-unlock-alt"></span>
+        <div class="container py-md-3">
+            <div class="row grids-wthree-info text-center">
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-info-con">
+                        <h4>Fast & Free Delivery</h4>
+                        <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.</p>
+                    </div>
                 </div>
-                <div class="content-bottom">
-                    <form action="#" method="post">
-                        <div class="field-group">
-                            <div class="content-input-field">
-                                <input name="text1" id="text1" type="text" value="" placeholder="User Name" required="">
-                            </div>
-                        </div>
-                        <div class="field-group">
-                            <div class="content-input-field">
-                                <input name="password" id="myInput" type="Password" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="content-input-field">
-                            <button type="submit" class="btn">Sign In</button>
-                        </div>
-                        <ul class="list-login">
-                            <li class="switch-slide">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                    keep Logged in
-                                </label>
-                            </li>
-                            <li>
-                                <a href="#" class="text-right">Forgot password?</a>
-                            </li>
-                            <li class="clearfix"></li>
-                        </ul>
-                        <ul class="list-login-bottom">
-                            <li class="">
-                                <a href="register.html" class="">Don't have an Account?</a>
-                            </li>
-                            <li class="">
-                                <a href="#" class="text-right">Need Help?</a>
-                            </li>
-                            <li class="clearfix"></li>
-                        </ul>
-                    </form>
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-info-con">
+                        <h4>Safe & Secure Payments</h4>
+                        <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-info-con">
+                        <h4>100% Money Back Guarantee</h4>
+                        <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /banner-bottom -->
+    <!--/banner-bottom -->
+    <section class="collections">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 ab-content-img">
+
+                </div>
+                <div class="col-md-4 ab-content text-center p-lg-5 p-3 my-lg-5">
+                    <h4>Travel Must Haves</h4>
+                    <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.</p>
+                    <a href="shop.html" class="btn shop mt-3">Shop Now</a>
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- /login -->
+    <!-- /banner-bottom -->
+    <!--/collections -->
+    <section class="banner-bottom py-5">
+        <div class="container py-md-5">
+
+            <h3 class="title-wthree mb-lg-5 mb-4 text-center">Safety Meets Style </h3>
+            <div class="row text-center">
+
+
+                <div class="col-md-4 content-gd-wthree">
+                    <img src="images/c1.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-md-4 content-gd-wthree ab-content py-lg-5 my-lg-5">
+                    <h4>Need Extra Space ?</h4>
+                    <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.</p>
+                    <a href="shop.html" class="btn shop mt-3">Shop Now</a>
+
+                </div>
+                <div class="col-md-4 content-gd-wthree">
+                    <img src="images/c2.jpg" class="img-fluid" alt="" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- //collections-->
+    <!-- /mid-section -->
+    <section class="mid-section">
+        <div class="d-lg-flex p-0">
+            <div class="col-lg-6 bottom-w3pvt-left p-lg-0">
+                <img src="images/ab1.jpg" class="img-fluid" alt="" />
+                <div class="pos-wthree">
+                    <h4 class="text-wthree">50% Off Any <br> Women's Bags</h4>
+                    <a href="shop.html" class="btn shop mt-3">Shop Now</a>
+                </div>
+            </div>
+            <div class="col-lg-6 bottom-w3pvt-left bottom-w3pvt-right p-lg-0">
+                <img src="images/ab2.jpg" class="img-fluid" alt="" />
+                <div class="pos-w3pvt">
+                    <h4 class="text-w3pvt">30% Off Any <br> Men's Bags</h4>
+                    <a href="shop.html" class="btn shop mt-3">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //mid-section -->
+
+    <!--/gallery -->
+    <section class="banner-bottom py-5">
+        <div class="container py-md-5">
+
+
+            <div class="row">
+                <div class="col-lg-4 gallery-content-info text-center mt-lg-5">
+                    <h3 class="title-wthree mb-lg-5 mb-4">Trending Now </h3>
+                    <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus libero.</p>
+                    <a href="shop.html" class="btn shop mt-3">Shop Now</a>
+
+                </div>
+                <div class="col-lg-8 gallery-content">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="#gal1"><img src="images/g1.jpg" alt="Baggage" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="#gal2"><img src="images/g2.jpg" alt="Baggage" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="#gal3"><img src="images/g3.jpg" alt="Baggage" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="#gal1"><img src="images/g4.jpg" alt="Baggage" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="#gal2"><img src="images/g5.jpg" alt="Baggage" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="#gal3"><img src="images/g6.jpg" alt="Baggage" class="img-fluid mt-4"></a>
+                        </div>
+
+                    </div>
+                    <!-- gallery popups -->
+                    <!-- popup-->
+                    <div id="gal1" class="popup-effect">
+                        <div class="popup">
+                            <img src="images/g1.jpg" alt="Popup image" class="img-fluid mt-4" />
+                            <a class="close" href="#gallery">&times;</a>
+                        </div>
+                    </div>
+                    <!-- //popup -->
+                    <!-- popup-->
+                    <div id="gal2" class="popup-effect">
+                        <div class="popup">
+                            <img src="images/g2.jpg" alt="Popup image" class="img-fluid mt-4" />
+                            <a class="close" href="#gallery">&times;</a>
+                        </div>
+                    </div>
+                    <!-- //popup -->
+                    <!-- popup-->
+                    <div id="gal3" class="popup-effect">
+                        <div class="popup">
+                            <img src="images/g3.jpg" alt="Popup image" class="img-fluid mt-4" />
+                            <a class="close" href="#gallery">&times;</a>
+                        </div>
+                    </div>
+                    <!-- //popup -->
+                    <!-- //gallery popups -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- //gallery-->
+    <!--/newsletter -->
+<!--     <section class="newsletter-w3pvt py-5">
+        <div class="container py-md-5">
+            <form method="post" action="#">
+                <p class="text-center">Subscribe to the Handbags Store mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+               <div class="row subscribe-sec">
+                    <div class="col-md-9">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Your Email.." name="email" required="">
+
+                    </div>
+                    <div class="col-md-3">
+
+                        <button type="submit" class="btn submit">Subscribe</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section> -->
+    <!--//newsletter -->
     <!--/shipping-->
     <section class="shipping-wthree">
         <div class="shiopping-grids d-lg-flex">
@@ -182,9 +321,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container py-md-5">
             <div class="row">
                 <div class="col-lg-3 footer_wthree_gridf mt-lg-5">
-                    <h2><a href="index.html"><span>B</span>aggage
+                    <h2><a href="index.html"><span>B</span>ookchain
                         </a> </h2>
-                    <label class="sub-des2">Online Store</label>
+                    <label class="sub-des2">inherit(your_book);</label>
                 </div>
                 <div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-4">
                     <ul class="footer_wthree_gridf_list">
@@ -254,16 +393,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
     <!-- //footer -->
-
-    <!-- copyright -->
-    <div class="cpy-right text-center py-3">
-        <p>© 2019 Baggage. All rights reserved | Design by
-            <a href="http://w3layouts.com"> W3layouts.</a>
-        </p>
-
-    </div>
-    <!-- //copyright -->
-
 </body>
 
 </html>
