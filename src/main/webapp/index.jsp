@@ -102,11 +102,9 @@
                 <div class="col-md-4 ab-content text-center p-lg-5 p-3 my-lg-5">
                     <h4>Events to be Organized</h4>
                     <p>
-                    	<ul>
-                    		<li>Book Swap</li>
-                    		<li>Book Fairies</li>
-                    		<li>Book </li>
-                    	</ul>
+                    	Book Swap
+                    	Book Fairies
+                    	Book
                     </p>
                     <a href="${contextPath}/contact" class="btn shop mt-3">Join Now</a>
                 </div>
@@ -117,7 +115,7 @@
     <!-- /mid-section -->
 
     <!--/gallery -->
-    <section class="banner-bottom py-5">
+<!--     <section class="banner-bottom py-5">
         <div class="container py-md-5">
 
 
@@ -150,39 +148,40 @@
                         </div>
 
                     </div>
-                    <!-- gallery popups -->
-                    <!-- popup-->
+                    gallery popups
+                    popup
                     <div id="gal1" class="popup-effect">
                         <div class="popup">
                             <img src="images/g1.jpg" alt="Popup image" class="img-fluid mt-4" />
                             <a class="close" href="#gallery">&times;</a>
                         </div>
                     </div>
-                    <!-- //popup -->
-                    <!-- popup-->
+                    //popup
+                    popup
                     <div id="gal2" class="popup-effect">
                         <div class="popup">
                             <img src="images/g2.jpg" alt="Popup image" class="img-fluid mt-4" />
                             <a class="close" href="#gallery">&times;</a>
                         </div>
                     </div>
-                    <!-- //popup -->
-                    <!-- popup-->
+                    //popup
+                    popup
                     <div id="gal3" class="popup-effect">
                         <div class="popup">
                             <img src="images/g3.jpg" alt="Popup image" class="img-fluid mt-4" />
                             <a class="close" href="#gallery">&times;</a>
                         </div>
                     </div>
-                    <!-- //popup -->
-                    <!-- //gallery popups -->
+                    //popup
+                    //gallery popups
 
                 </div>
             </div>
 
         </div>
     </section>
-    <!-- //gallery-->
+ -->    
+	<!-- //gallery-->
     <!--/shipping-->
 	    <section class="shipping-wthree">
 	        <div class="shiopping-grids d-lg-flex">

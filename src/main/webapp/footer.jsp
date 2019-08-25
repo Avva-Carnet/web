@@ -49,7 +49,7 @@
 								<a href="about.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> About</a>
 							</li>
 							<li>
-								<a href="buy.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> Buy</a>
+								<a href="shop.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span> Buy</a>
 							</li>
 							<li>
 								<a href="sell.jsp"><span class="fa fa-angle-right" aria-hidden="true"></span>Sell</a>

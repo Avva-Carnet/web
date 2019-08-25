@@ -56,10 +56,10 @@
 							<input type="checkbox" id="drop" />
 							<ul class="menu">
 								<li class="active"><a href="index.html">Home</a></li>
-								<li><a href="${contextPath}/about">About Us</a></li>
-								<li><a href="${contextPath}/shop">Buy</a></li>
-								<li><a href="${contextPath}/sell">Sell</a></li>
-								<li><a href="${contextPath}/contact">Contact</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="shop.jsp">Buy</a></li>
+								<li><a href="sell.jsp">Sell</a></li>
+								<li><a href="contact.jsp">Contact</a></li>
 							</ul>
 						</nav>
 						<div class="search-form ml-auto">

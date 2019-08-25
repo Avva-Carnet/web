@@ -63,15 +63,18 @@
 					<div class="col-lg-3 shop-info-grid text-center mt-4">
 						<div class="product-shoe-info shoe">
 							<div class="men-thumb-item">
-								<img src="images/b2.jpg" class="img-fluid" alt="">
+								<img src="images/b1.jpg" class="img-fluid" alt="">
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="single.html">Shoulder Bag (Pink) </a>
+									<a href="single.html">
+										Book Name
+									</a>
 								</h4>
+								<p>Author Name</p>
 								<div class="product_price">
 									<div class="grid-price">
-										<span class="money"><span class="line">$799</span> $675.00</span>
+										<span class="money"><!-- <span class="line">$799</span> --> &#8377;675.00</span>
 									</div>
 								</div>
 							</div>
@@ -80,15 +83,18 @@
 					<div class="col-lg-3 shop-info-grid text-center mt-4">
 						<div class="product-shoe-info shoe">
 							<div class="men-thumb-item">
-								<img src="images/b3.jpg" class="img-fluid" alt="">
+								<img src="images/b1.jpg" class="img-fluid" alt="">
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="single.html">Sling Bag </a>
+									<a href="single.html">
+										Book Name
+									</a>
 								</h4>
+								<p>Author Name</p>
 								<div class="product_price">
 									<div class="grid-price">
-										<span class="money"><span class="line">$599</span> $475.00</span>
+										<span class="money"><!-- <span class="line">$799</span> --> &#8377;675.00</span>
 									</div>
 								</div>
 							</div>
@@ -97,15 +103,18 @@
 					<div class="col-lg-3 shop-info-grid text-center mt-4">
 						<div class="product-shoe-info shoe">
 							<div class="men-thumb-item">
-								<img src="images/b4.jpg" class="img-fluid" alt="">
+								<img src="images/b1.jpg" class="img-fluid" alt="">
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="single.html">Tote (Blue) </a>
+									<a href="single.html">
+										Book Name
+									</a>
 								</h4>
+								<p>Author Name</p>
 								<div class="product_price">
 									<div class="grid-price">
-										<span class="money"><span class="line">$799</span> $675.00</span>
+										<span class="money"><!-- <span class="line">$799</span> --> &#8377;675.00</span>
 									</div>
 								</div>
 							</div>
