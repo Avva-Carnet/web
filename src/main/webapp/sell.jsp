@@ -1,3 +1,8 @@
+
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 <!DOCTYPE html>
 <html lang="zxx">
 	<head>
@@ -17,9 +22,9 @@
 		</script>
 		<!-- //Meta tag Keywords -->
 		<!-- Custom-Files -->
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="${contextPath}/resources/css/bootstrap.css">
 		<!-- Bootstrap-Core-CSS -->
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="${contextPath}/resources/css/style.css" type="text/css" media="all" />
 		<!-- Style-CSS -->
 		<!-- font-awesome-icons -->
 		<link href="css/font-awesome.css" rel="stylesheet">

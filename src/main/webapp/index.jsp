@@ -5,6 +5,10 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -25,12 +29,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </script>
     <!-- //Meta tag Keywords -->
     <!-- Custom-Files -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="${contextPath}/resources/css/bootstrap.css">
     <!-- Bootstrap-Core-CSS -->
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="${contextPath}/resources/css/style.css" type="text/css" media="all" />
     <!-- Style-CSS -->
     <!-- font-awesome-icons -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="${contextPath}/resources/css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome-icons -->
     <!-- /Fonts -->
     <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
@@ -98,11 +102,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row">
                 <div class="col-lg-5 banner-left-info">
                     <h3>The Largest Range <span>of Books</span></h3>
-                    <a href="shop.html" class="btn shop">Buy Now</a>
+                    <a href="${contextPath}/sell" class="btn shop">Buy Now</a>
                 </div>
 
                 <div class="col-lg-7 banner-img">
-                    <img src="images/bag.png" alt="part image" class="img-fluid">
+                    <img src="${contextPath}/resources/images/book.png" alt="part image" class="img-fluid">
                 </div>
             </div>
         </div>

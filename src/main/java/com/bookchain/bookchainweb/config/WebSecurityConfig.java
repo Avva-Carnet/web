@@ -32,6 +32,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
             .formLogin()
                 .loginPage("/login")
+                .defaultSuccessUrl("/index.jsp", true)
                 .permitAll()
                 .and()
             .logout()
