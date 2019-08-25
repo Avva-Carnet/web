@@ -37,31 +37,89 @@
 		<!--/banner-bottom -->
 		<section class="banner-bottom py-5">
 			<div class="container py-5">
-				<h3 class="title-wthree mb-lg-5 mb-4 text-center">Books</h3>
+				<h3 class="title-wthree mb-lg-5 mb-4 text-center">Currently Available</h3>
 				<!--/row-->
 				<div class="row shop-wthree-info text-center">
-					<c:forEach var="book" items="${books}">
-						<div class="col-lg-3 shop-info-grid text-center mt-4">
-							<div class="product-shoe-info shoe">
-								<div class="men-thumb-item">
-									<img src="images/b1.jpg" class="img-fluid" alt="">
-								</div>
-								<div class="item-info-product">
-									<h4>
-										<a href="single.html">
-											${book.name }
-										</a>
-									</h4>
-									<p>${book.author }</p>
-									<div class="product_price">
-										<div class="grid-price">
-											<span class="money"><!-- <span class="line">$799</span> --> &#8377;${book.price }</span>
-										</div>
+					<div class="col-lg-3 shop-info-grid text-center mt-4">
+						<div class="product-shoe-info shoe">
+							<div class="men-thumb-item">
+								<img src="images/b1.jpg" class="img-fluid" alt="">
+							</div>
+							<div class="item-info-product">
+								<h4>
+									<a href="single.html">
+										Book Name
+									</a>
+								</h4>
+								<p>Author Name</p>
+								<div class="product_price">
+									<div class="grid-price">
+										<span class="money"><!-- <span class="line">$799</span> --> &#8377;675.00</span>
 									</div>
 								</div>
 							</div>
 						</div>
-					</c:forEach>
+					</div>
+					<div class="col-lg-3 shop-info-grid text-center mt-4">
+						<div class="product-shoe-info shoe">
+							<div class="men-thumb-item">
+								<img src="images/b1.jpg" class="img-fluid" alt="">
+							</div>
+							<div class="item-info-product">
+								<h4>
+									<a href="single.html">
+										Book Name
+									</a>
+								</h4>
+								<p>Author Name</p>
+								<div class="product_price">
+									<div class="grid-price">
+										<span class="money"><!-- <span class="line">$799</span> --> &#8377;675.00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 shop-info-grid text-center mt-4">
+						<div class="product-shoe-info shoe">
+							<div class="men-thumb-item">
+								<img src="images/b1.jpg" class="img-fluid" alt="">
+							</div>
+							<div class="item-info-product">
+								<h4>
+									<a href="single.html">
+										Book Name
+									</a>
+								</h4>
+								<p>Author Name</p>
+								<div class="product_price">
+									<div class="grid-price">
+										<span class="money"><!-- <span class="line">$799</span> --> &#8377;675.00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 shop-info-grid text-center mt-4">
+						<div class="product-shoe-info shoe">
+							<div class="men-thumb-item">
+								<img src="images/b1.jpg" class="img-fluid" alt="">
+							</div>
+							<div class="item-info-product">
+								<h4>
+									<a href="single.html">
+										Book Name
+									</a>
+								</h4>
+								<p>Author Name</p>
+								<div class="product_price">
+									<div class="grid-price">
+										<span class="money"><!-- <span class="line">$799</span> --> &#8377;675.00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<!--//row-->
 			</div>
