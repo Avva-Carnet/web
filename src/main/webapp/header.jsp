@@ -68,7 +68,7 @@
 							<ul class="menu">
 								<li class="active"><a href="index.jsp">Home</a></li>
 								<li><a href="${contextPath}/about.jsp">About Us</a></li>
-								<li><a href="${contextPath}/shop.jsp">Buy</a></li>
+								<li><a href="${contextPath}/books/">Buy</a></li>
 								<li><a href="${contextPath}/books/new">Sell</a></li>
 								<li><a href="${contextPath}/contact.jsp">Contact</a></li>
 							</ul>
